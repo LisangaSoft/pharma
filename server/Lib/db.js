@@ -1,4 +1,4 @@
-
+//configuration de la connexion à la base de données
 var mysql = require('mysql');
 var params = { 
 	host: '', 
