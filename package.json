@@ -1,0 +1,27 @@
+{
+  "name": "pharma",
+  "version": "1.0.0",
+  "description": "Un essaie de gestion d'une pharmacie par LisangaSoft trainning team",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LisangaSoft/pharma.git"
+  },
+  "keywords": [
+    "pahrmacie",
+    "gestion"
+  ],
+  "author": "Dedrick Kitamuka <kitamuka@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LisangaSoft/pharma/issues"
+  },
+  "homepage": "https://github.com/LisangaSoft/pharma#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
