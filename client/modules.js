@@ -1,1 +1,2 @@
-//declaration des différents modules 
+
+angular.module('pharma', ['ngCookies', 'ngRoute']);
