@@ -1,3 +1,13 @@
+#ignore npm/node_modules  
+node_modules/
+npm-debug.log
+
+#ignore le dossier client/lib/
+client/lib/
+
+#ignore le dossier dist/
+dist/
+
 # Logs
 logs
 *.log
