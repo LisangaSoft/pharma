@@ -1,0 +1,38 @@
+--
+-- Dumping data for table `articles`
+--
+INSERT INTO `articles` (`article_id`, `lib_articles`, `categorie_id`, `fournisseur_id`) VALUES
+('p/001', 'kilo', 'A/001', 'f/001');
+--
+-- Dumping data for table `categories`
+--
+INSERT INTO `categories` (`categorie_id`, `lib_categorie`) VALUES
+('A/001', 'cat1');
+--
+-- Dumping data for table `fournisseurs`
+--
+INSERT INTO `fournisseurs` (`fournisseur_id`, `lib_fournisseur`, `Adresse`, `Telephone`) VALUES
+('f/001', 'silpharma', 'galiemacenter', '0810951614');
+--
+-- Dumping data for table `stocks`
+--
+INSERT INTO `stocks` (`stock_id`, `lib_stock`, `quantite`, `prix_unitaire`, `article_id`) VALUES
+('s/001', 'hhh', 40, 400, 'p/001');
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `articles`
+--
+ALTER TABLE `articles`
+  ADD CONSTRAINT `articles_ibfk_1` FOREIGN KEY (`categorie_id`) REFERENCES `categories` (`categorie_id`),
+  ADD CONSTRAINT `articles_ibfk_2` FOREIGN KEY (`fournisseur_id`) REFERENCES `fournisseurs` (`fournisseur_id`);
+
+--
+-- Constraints for table `stocks`
+--
+ALTER TABLE `stocks`
+  ADD CONSTRAINT `stocks_ibfk_1` FOREIGN KEY (`article_id`) REFERENCES `articles` (`article_id`);
+
+
